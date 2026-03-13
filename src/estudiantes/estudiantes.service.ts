@@ -41,7 +41,7 @@ export class EstudiantesService {
     }
 
     deleteEst(id:number):void{
-        this.Estudiantes = this.Estudiantes.filter((Estudiante) => Estudiante.id==id);
+        this.Estudiantes = this.Estudiantes.filter((Estudiante) => Estudiante.id!=id);
     }
 
 }
